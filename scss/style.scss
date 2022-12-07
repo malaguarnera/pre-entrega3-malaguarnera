@@ -54,14 +54,21 @@ header{
     background-position: center center;
     padding: 40px;
     text-transform: uppercase;
+    .navbar-nav{
+        position: relative;
+        z-index: 1;
+        
 
     .nav-item{
    
         padding: 10px;
         font-size: 25px;
         font-weight: bold;
+        
+        
 
     }
+}
 }
 
 //codigo main
@@ -78,7 +85,7 @@ main{
 
     .contenedor_ubi{
         display: grid;
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:repeat(1,2fr);
         grid-gap: 8rem;
         padding: 5rem;
         
@@ -111,6 +118,27 @@ main{
 
         
        }
+       @media  screen and (max-width: 700px) {
+        .contenedor_ubi{
+            height: 100%;
+            grid-template-columns: repeat(1,1fr) !important;
+
+            .info{
+                height: 100%;
+            }
+        }
+    }
+    @media  screen and (max-width: 1076px) {
+        .contenedor_ubi{
+            padding: 15px;
+            height: 100%;
+            grid-template-columns: repeat(2,1fr);
+
+            .info{
+                height: 100%;
+            }
+        }
+    }
 
     }
 
@@ -359,7 +387,7 @@ main{
 
             .iconos{
                 i{
-                   font-size: 3rem;
+                   font-size: 3.5rem;
                     margin: 2rem;
                     
                     
@@ -368,7 +396,7 @@ main{
             .logo{
 
                 h1{
-                    font-size: 5rem;
+                    font-size: 6rem;
                 }
             }
         }
@@ -380,7 +408,7 @@ main{
 
             &::after{
                 content: attr(data-text);
-                font-size: 2rem;
+                font-size: 2.8rem;
                 margin:0 2rem;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -390,11 +418,11 @@ main{
         .letter{
             h1{
                 margin: 1rem 0;
-                font-size: 3rem;
+                font-size: 3.5rem;
             }
             p{
                 margin: .5rem 0;
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
             input[type="email"]{
                 outline: none;
