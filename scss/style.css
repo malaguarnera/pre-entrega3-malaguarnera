@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+*,
+*::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  text-transform: uppercase;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  justify-content: start;
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background-image: url(../assets/img/fondonav.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 40px;
+  text-transform: uppercase;
+}
+header .nav-item {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(60deg, #c4e0e5, #4ca1af);
+}
+main .contenedor_ubi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8rem;
+  padding: 5rem;
+}
+main .contenedor_ubi .info {
+  background: linear-gradient(60deg, #5DA7DB, #81C6E8);
+  width: 500px;
+  border-radius: 5px;
+  color: #000428;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 5px;
+  overflow: hidden;
+}
+main .contenedor_ubi .info h4 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+main .contenedor_ubi .info p {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+}
+main .contenedor_nosotros {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+}
+main .contenedor_nosotros .card_nosotros {
+  width: 100%;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ccc;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  font-size: 18px;
+}
+main .contenedor_nosotros .card_nosotros .contenido {
+  padding: 15px;
+  text-align: center;
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+main .contenedor_nosotros .card_nosotros .contenido h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+main .contenedor_nosotros .card_nosotros img {
+  width: 100%;
+  height: 100%;
+}
+main .contenedor_nosotros .card_nosotros:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+main .formulario {
+  margin: auto;
+  background-color: #6096ba;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+main .formulario .control {
+  width: 100%;
+  background-color: #A3CEF1;
+  padding: 10px;
+  border-radius: 5px;
+}
+main .formulario .boton {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #A3CEF1;
+}
+main .formulario .boton:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+main .contenedor_card {
+  background: linear-gradient(60deg, #c4e0e5, #4ca1af);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+main .contenedor_card .tarjeta {
+  width: 70%;
+  height: 550px;
+  background: #59C1BD;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+main .contenedor_card .tarjeta:hover {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+main .contenedor_card .tarjeta .precio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  color: #ccc;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+main .contenedor_card .tarjeta .precio h3 {
+  font-size: 4rem;
+}
+main .contenedor_card .tarjeta .precio h2 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+main .contenedor_card .tarjeta .precio p {
+  font-size: 18px;
+}
+main .contenedor_card .tarjeta .precio .boton_tarjeta {
+  background: linear-gradient(50deg, #000428, #004e92);
+  color: #ccc;
+  padding: 10px 25px;
+  text-decoration: none;
+  margin-top: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+}
+main .contenedor_card .tarjeta .precio .boton_tarjeta:hover {
+  background: linear-gradient(50deg, #004e92, #000428);
+}
+main .contenedor_card .tarjeta .primera {
+  background: linear-gradient(25deg, #26a9b3, #5b86e5);
+}
+main .contenedor_card .tarjeta .segunda {
+  background: linear-gradient(25deg, #b06ab3, #4568dc);
+}
+main .contenedor_card .tarjeta .tercera {
+  background: linear-gradient(25deg, #dd2476, #ff512f);
+}
+main .contenedor_card .tarjeta .modos_pagos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  font-size: 20px;
+}
+main .contenedor_card .tarjeta .modos_pagos ul {
+  list-style: none;
+}
+main .contenedor_card .tarjeta .modos_pagos ul li {
+  line-height: 2;
+}
+main .contenedor_card .tarjeta .modos_pagos ul li span {
+  color: orangered;
+  padding-right: 10px;
+}
+@media screen and (max-width: 700px) {
+  main .contenedor_card {
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  main .contenedor_card .tarjeta {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1076px) {
+  main .contenedor_card {
+    padding: 15px;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .contenedor_card .tarjeta {
+    height: 100%;
+  }
+}
+main .carrusel {
+  font-size: 25px;
+}
+main .carrusel img {
+  padding: 40px;
+  border-radius: 8px;
+}
+main .carrusel h5 {
+  font-size: 50px;
+  color: rgb(6, 6, 6);
+}
+main .carrusel a {
+  text-decoration: none;
+  color: #012726;
+}
+
+#footer {
+  height: auto;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+#footer .footer_contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#footer .footer_contenedor i:hover {
+  color: #00ff00;
+  cursor: pointer;
+}
+#footer .footer_contenedor .logo_contenedor, #footer .footer_contenedor .info, #footer .footer_contenedor .letter {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 3rem;
+  color: #fff;
+  flex: 1 0 25rem;
+  flex-flow: column wrap;
+}
+#footer .footer_contenedor .logo_contenedor {
+  text-align: center;
+}
+#footer .footer_contenedor .logo_contenedor .iconos i {
+  font-size: 3rem;
+  margin: 2rem;
+}
+#footer .footer_contenedor .logo_contenedor .logo h1 {
+  font-size: 5rem;
+}
+#footer .footer_contenedor .info i {
+  margin: 0 2rem;
+  font-size: 3rem;
+  padding: 1rem;
+}
+#footer .footer_contenedor .info i::after {
+  content: attr(data-text);
+  font-size: 2rem;
+  margin: 0 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#footer .footer_contenedor .letter h1 {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+#footer .footer_contenedor .letter p {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+#footer .footer_contenedor .letter input[type=email] {
+  outline: none;
+  border: none;
+  padding: 0 1rem;
+  height: 4rem;
+  background: #f5f5f5;
+  color: rgb(7, 7, 7);
+  font-size: 2rem;
+}
+#footer .footer_contenedor .letter input[type=submit] {
+  outline: none;
+  border: none;
+  height: 3rem;
+  width: 8rem;
+  background: #00ff00;
+  color: #fff;
+  margin: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#footer .footer_contenedor .letter input[type=submit]:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+#footer .text {
+  width: 100%;
+}
+#footer .text h1 {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: #ccc;
+}/*# sourceMappingURL=style.css.map */
