@@ -38,10 +38,18 @@
     "undefsafe": "^2.0.5"
   },
   "scripts": {
-    "build-css": "node-sass -o css css" ,
+    "build-css": "node-sass -o css css",
     "watch-css": "nodemon -e sass -x \"npm run build-css\""
-},
+  },
   "author": "Luis Malaguarnera",
   "license": "ISC",
-  "description": "Pagina Odonotologica de Ferrero Gustavo."
+  "description": "Pagina Odonotologica de Ferrero Gustavo.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malaguarnera/pre-entrega3-malaguarnera.git"
+  },
+  "bugs": {
+    "url": "https://github.com/malaguarnera/pre-entrega3-malaguarnera/issues"
+  },
+  "homepage": "https://github.com/malaguarnera/pre-entrega3-malaguarnera#readme"
 }
