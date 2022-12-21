@@ -40,39 +40,85 @@
             </div>
           </nav>
     </header>
-    <main>
-      <section class="formulario">
-        <form class="form" action="">
+    <main class="form_main"> 
+      <form  class="row g-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombres</label>
+          <input type="name" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="apellido" class="form-label">Apellidos</label>
+          <input type="name" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Telefono de contacto</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="   ">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Obra social</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="  ">
+        </div>
+        <div class="col-12">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="  ">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Provincia</label>
+          <select id="inputState" class="form-select">
+            <option selected></option>
+            <option>Buenos Aires</option>
+            <option>Catamarca</option>
+            <option>Chaco</option>
+            <option>Chubut</option>
+            <option>Corrientes</option>
+            <option>Entre Ríos</option>
+            <option>Formosa</option>
+            <option>Jujuy</option>
+            <option>La Pampa</option>
+            <option>La Rioja</option>
+            <option>Mendoza</option>
+            <option>Misiones</option>
+            <option>Neuquén</option>
+            <option>Río Negro</option>
+            <option>Salta</option>
+            <option>San Juan</option>
+            <option>San Luis</option>
+            <option>Santa Fe</option>
+            <option>Santiago del Estero</option>
+            <option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+            <option>Tucumán</option>
         
-            <fieldset>
-                <legend class="titulo" > Turnos online</legend>
-        
-        <input class="control" type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre">
-        <br><br>
-       
-        <input class="control" type="text" name="apellido" id="apellido" placeholder="ingresa tu apellido">
-        <br><br>
-        
-        <input class="control" type="text" name="mail" id="mail" placeholder="ingresa tu mail">
-        <br><br>
-        <input class="control" type="text" name="obra social" id="obra social" placeholder="ingresa tu obra social">
-        <br><br>
-        <textarea class="control" name="mensaje" id="mensaje" placeholder="motivo de tu turno" ></textarea>
-        <br><br>
-        
-        <input class="boton" type="submit" value="enviar">
-        <input class="boton" type="reset" value="reset">
-        <br><br>
-        <label for="hombre">Hombre</label>
-        <input type="radio" name="sexo" id="hombre" value="hombre">
-        <label for="mujer">Mujer</label>
-        <input type="radio" name="sexo" id="mujer" value="mujer">
-        <br><br>
-        
-        
-        </fieldset>
-        </form>
-    </section>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Codigo Postal</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            Hombre
+            </label>
+        </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            Mujer
+            </label>
+        </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+      
     </main>
     <aside></aside>
     <footer>

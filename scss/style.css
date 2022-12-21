@@ -28,15 +28,36 @@ header {
   padding: 40px;
   text-transform: uppercase;
 }
+header .navbar-toggler {
+  font-size: 20px;
+}
+@media (max-width: 991px) {
+  header .navbar-nav {
+    background-color: #eff5f5;
+    border-radius: 10px;
+  }
+}
 header .navbar-nav {
   position: relative;
   z-index: 1;
-  background-color: #f1f1f1;
 }
 header .navbar-nav .nav-item {
   padding: 10px;
   font-size: 25px;
   font-weight: bold;
+}
+
+.form_main {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 2rem;
+}
+.form_main .row {
+  border: solid;
+  border-radius: 10px;
+  border-color: #59C1BD;
+  box-shadow: linear-gradient(50deg, #000428, #004e92);
 }
 
 main {
@@ -116,28 +137,6 @@ main .contenedor_nosotros .card_nosotros img {
 main .contenedor_nosotros .card_nosotros:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
-}
-main .formulario {
-  margin: auto;
-  background-color: #6096ba;
-  padding: 30px;
-  border-radius: 5px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-main .formulario .control {
-  width: 100%;
-  background-color: #A3CEF1;
-  padding: 10px;
-  border-radius: 5px;
-}
-main .formulario .boton {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #A3CEF1;
-}
-main .formulario .boton:hover {
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 main .contenedor_card {
   background: linear-gradient(60deg, #c4e0e5, #4ca1af);
@@ -223,10 +222,9 @@ main .contenedor_card .tarjeta .modos_pagos ul li span {
 @media only screen and (min-width: 575px) and (max-width: 1024px) {
   main header .navbar-nav .nav-item {
     z-index: 100;
-    background-color: none;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   main .contenedor_card {
     height: 100%;
     grid-template-columns: repeat(1, 1fr) !important;
@@ -254,7 +252,11 @@ main .contenedor_card .tarjeta .modos_pagos ul li span {
   }
 }
 main .carrusel {
+  height: 100vh;
   font-size: 25px;
+}
+main .carrusel .carousel-item {
+  height: 95vh;
 }
 main .carrusel img {
   padding: 40px;
